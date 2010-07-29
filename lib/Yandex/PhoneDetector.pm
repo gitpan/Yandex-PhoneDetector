@@ -190,13 +190,11 @@ Yandex::PhoneDetector - Detector mobile phone
 	}
 
 	if($phone_detector->is_phone){
-		print "yes mobile phone!"
-
-		print "details mobile phone!"
+		print "yes mobile phone!\n"
+		print "details mobile phone!\n"
 		print Dumper $phone_detector->details();
 		$phone_detector->flush();
 	}
-
 
 
 =head1 METHODS
@@ -229,18 +227,18 @@ Returns 1 if a mobile phone
 Returns the string with an error
 
 
-=head2 C<details>
-
-	$phone_detector->details();
-
-Returns the hash detail phone
-
-
 =head2 C<is_flush>
 
 	$phone_detector->is_flush()
 
 Cleans internal buffer
+
+
+=head2 C<details>
+
+	$phone_detector->details();
+
+Returns the hash detail phone
 
 
 =head2 C<profile>
@@ -257,7 +255,7 @@ If the http header is present "profile" send it with help of this method
 If the http header is present "wap-profile" send it with help of this method
 
 
-=head2 C<wap_profile>
+=head2 C<x_wap_profile>
 
 	$phone_detector->x_wap_profile('');
 
@@ -273,7 +271,7 @@ Additional title passed to the browser Opera Mini. Usually contains the full-bro
 
 =head1 AUTHOR
 
-Kostya Ten, E<lt>kostya@ruE<gt>
+Kostya Ten, E<lt>kostya@cpan.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
