@@ -1,0 +1,6 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/Yandex-PhoneDetector.t
+lib/Yandex/PhoneDetector.pm
